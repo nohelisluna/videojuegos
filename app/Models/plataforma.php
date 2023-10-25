@@ -5,10 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class user extends Model
+class plataforma extends Model
 {
     use HasFactory;
-    public function rol(){
-        return $this->belongsTo('rols','id');
-    }
+    protected $filleable='plataformas';
 }

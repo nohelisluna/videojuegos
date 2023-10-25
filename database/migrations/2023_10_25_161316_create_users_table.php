@@ -8,20 +8,19 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     * 
-     * 
-     * 
-     * 
-     * 
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('videojuegos', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->text('descripcion');
+            $table->bigInteger('telefono');
+            $table->string('correo');
+            $table->string('password');
+            $table->bigInteger('rols_id')->unsigned();
+            $table->foreign('rols_id')->references('id')->on('rols');
             $table->timestamps();
         });
     }
@@ -33,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('videojuegos');
+        Schema::dropIfExists('users');
     }
 };
