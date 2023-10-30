@@ -17,12 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('nombre_juego');
             $table->text('descripcion');
-            $table->bigInteger('categorias_id')->unsigned();
-            $table->foreign('categorias_id')->references('id')->on('categorias');
-            $table->bigInteger('plataformas_id')->unsigned();
-            $table->foreign('plataformas_id')->references('id')->on('plataformas');
-            $table->bigInteger('users_id')->unsigned();
-            $table->foreign('users_id')->references('id')->on('users');
+            $table->bigInteger('categorias_id')->unsigned()->nullable();
+            $table->foreign('categorias_id')->references('id')->on('categorias')->onDelete('set null');
+            $table->bigInteger('plataformas_id')->unsigned()->nullable();
+            $table->foreign('plataformas_id')->references('id')->on('plataformas')->onDelete('set null');
+            $table->bigInteger('users_id')->unsigned()->nullable();
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('set null');
             $table->timestamps();
         });
     }
