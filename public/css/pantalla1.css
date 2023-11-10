@@ -1,0 +1,250 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    height: 80vw;
+    position: relative;
+    background: #000;
+   
+}
+header{
+    width:100%;
+    height: 6.5vw;
+    background: #50abf5;
+    padding: 0px;
+}
+.logo{
+  width:8.4vw ;
+  position: relative;
+  bottom: .4vw;
+  left: 3vw;
+}
+.regis{
+    position: relative;
+    left: 68vw;
+    bottom: 3.3vw;
+    width: 9vw;
+    height: 2.5vw;
+    border-radius: .3vw;
+    border: none;
+    font-size: 1.1vw;
+    color: white;
+    background: #174ACD;
+}
+.sesion{
+    position: relative;
+    left: 70vw;
+    bottom: 3.3vw;
+    width: 9vw;
+    height: 2.5vw;
+    border-radius: .3vw;
+    border: none;
+    font-size: 1.1vw;
+    color: white;
+    background: #CB0909;
+}
+/*slider principal*/
+.slider {
+  position: relative;
+  top: 1vw;
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+    transform: translate(1%,-2%);
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 18s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 79vw;
+    height: 42vw;
+    border-radius: 1vw;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/*div pequeños*/
+.cuadro1{
+    position: relative;
+    left: 10vw;
+    border-radius: 8vw;
+    width: 24vw;
+    height: 25vw;
+    border-width: .4vw;
+    border-style: solid;
+    border-color: rgba(185, 183, 183, 0.601);
+    border-radius: 1vw;
+    
+}
+.txt{
+    position: relative;
+    left: 3vw;
+    color: white;
+    font-size: 1.5vw; 
+    bottom: 2.4vw;
+}
+.btn1{
+position: absolute;
+width: 7.6vw;
+height: 2.1vw;
+left: 7.9vw;
+top: 21vw;
+border-radius: 1vw;
+border:none;
+color: white;
+background: #174ACD;
+}
+.imagen1{
+    border-radius: .4vw;
+    position: relative;
+    bottom: .3vw;
+    width:24.6vw;
+    right: .3vw;
+}
+.cuadro2{
+    position: relative;
+    bottom: 25.7vw;
+    left: 36.7vw;
+    border-radius: 4vw;
+    width: 24vw;
+    height: 25vw;
+    border-width: .4vw;
+    border-style: solid;
+    border-color: rgba(185, 183, 183, 0.601);
+    border-radius: 1vw;
+    
+}
+.txt2{
+    position: relative;
+    bottom: 1.9vw;
+    left: 3vw;
+    color: white;
+    font-size: 1.4vw; 
+}
+.btn2{
+position: absolute;
+width: 7.6vw;
+height: 2.1vw;
+left: 8vw;
+top: 21vw;
+border-radius: 1vw;
+border:none;
+color: white;
+background: #174ACD;
+}
+.imagen2{
+    border-radius: .4vw;
+    position: relative;
+    bottom: .3vw;
+    width:24.6vw;
+    right: .3vw;
+
+}
+.cuadro3{
+    position: relative;
+    bottom: 51.4vw;
+    left: 63.3vw;
+    border-radius: 4vw;
+    width: 24vw;
+    height: 25vw;
+    border-width: .4vw;
+    border-style: solid;
+    border-color: rgba(185, 183, 183, 0.601);
+    border-radius: 1vw;
+    
+}
+.txt3{
+    position: relative;
+    bottom: 2.1vw;
+    left: 3vw;
+    color: white;
+    font-size: 1.3vw; 
+}
+.btn3{
+position: absolute;
+width: 7.6vw;
+height: 2.1vw;
+left: 8vw;
+top: 21vw;
+border-radius: 1vw;
+border:none;
+color: white;
+background: #174ACD;
+}
+.imagen3{
+    border-radius: .4vw;
+    position: relative;
+    bottom: .3vw;
+    width:24.6vw;
+    height: 13.7vw;
+    right: .3vw;
+
+}
+  
+ .contenedor{
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.808);
+    margin-top: -115vw;
+    margin-left: 40vw;
+    padding: 2vw;
+    width: 18vw;
+    border-radius: 0.5vw;
+ }
+ .close{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .close button{
+    background:red;
+    border: 0.1vw solid black;
+    width: 1.5vw;
+    height: 1vw;
+    border-radius: 0.2vw;
+    font-weight: bold ;
+ }
+ .logo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .logo2 img{
+    height: 8vw;
+ }
+ .conten2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+ }
+.Ingresar{
+    margin-top: 2vw;
+    background: #50abf5;
+    border: 0.1vw solid black;
+    height: 1.5vw;
+    width: 5vw;
+    border-radius: .3vw;
+}
+ 

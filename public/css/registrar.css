@@ -1,0 +1,76 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background: #50ACF5;
+}
+.padre{
+    width: 45vw;
+    height: 45vw;
+    background-color: #fdfffc53;
+    position: relative;
+    top: .2vw;
+    left: 28vw;
+    border-radius: 1.5vw;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+
+}
+div img{
+    width: 14vw;
+    position: relative;
+    left: 15.5vw;
+}
+.nombres{
+    position: relative;
+    top: 1vw;
+    left: 7vw;
+}
+div input{
+    border-radius: .3vw;
+}
+.apellidos{
+    position: relative;
+   bottom: 5.5vw;
+    left: 25vw;
+}
+.correo{
+    position: relative;
+    bottom: 1vw;
+    left: 7vw;
+}
+.contraseña{
+    position: relative;
+    bottom: 7.5vw;
+    left: 25vw;
+}
+h3{
+    color: black;
+}
+.registrar{
+    position: relative;
+    width: 8.8vw;
+    height: 2.5vw;
+    bottom: 2vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.437);
+    border-radius: .5vw;
+    left: 19vw;
+    color: white;
+    font-size: 1.4vw;
+    background: #50ACF5;
+}
+div input{
+    border: none;
+    width: 14vw;
+    height: 1.7vw;
+
+}
+.Atras{
+    width: 7vw;
+    height: 2vw;
+    background:#005BA4;
+    border: none;
+    border-radius: .5vw;
+    position: relative;
+    color: white;
+    left: 1vw;
+        top: 1vw;
+}
